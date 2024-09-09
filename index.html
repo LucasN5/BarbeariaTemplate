@@ -4,65 +4,111 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Barbearia Template</title>
   </head>
 
-  <body>
-    <header>
-      <div>
-        <nav>
-          <div>
-            <img />
-            <p class="text-red-700">Barbearia</p>
+  <body class="relative">
+    <header
+      class="fixed z-50 w-full pt-4 pb-4 bg-black border-b-secondary border-b-4"
+    >
+      <div class="container mx-auto">
+        <nav class="flex flex-row items-center justify-between">
+          <div class="flex flex-row items-center gap-2">
+            <img
+              src="./assets/tesouraIcone2.png"
+              alt="Icone de uma tesoura"
+              class="w-5 h-5"
+            />
+            <p class="text-xl text-white font-Raleway cursor-default">
+              Barbearia
+            </p>
           </div>
 
           <div>
-            <ul>
+            <ul class="flex flex-row gap-5">
               <li>
                 <a>
-                  <button class="text-red-700">Ínicio</button>
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Ínicio
+                  </button>
                 </a>
               </li>
 
               <li>
                 <a>
-                  <button>Sobre nós</button>
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Sobre nós
+                  </button>
                 </a>
               </li>
 
               <li>
                 <a>
-                  <button>Serviços</button>
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Serviços
+                  </button>
                 </a>
               </li>
 
               <li>
                 <a>
-                  <button>Produtos</button>
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Produtos
+                  </button>
                 </a>
               </li>
 
               <li>
                 <a>
-                  <button>Preços</button>
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Preços
+                  </button>
                 </a>
               </li>
 
               <li>
                 <a>
-                  <button>Equipe</button>
+                  <button
+                    class="text-xl text-white font-Ralewa hover:text-secondary ease-in duration-100"
+                  >
+                    Equipe
+                  </button>
                 </a>
               </li>
 
               <li>
                 <a>
-                  <button>Depoimentos</button>
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Depoimentos
+                  </button>
                 </a>
               </li>
 
               <li>
                 <a>
-                  <button>Contato</button>
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Contato
+                  </button>
                 </a>
               </li>
             </ul>
@@ -72,21 +118,44 @@
     </header>
 
     <main>
-      <section></section>
+      <section id="hero" class="relative h-screen">
+        <div
+          class="bg-hero-background h-full w-full flex flex-col justify-center items-start pl-5 gap-20"
+        >
+          <div class="gap-6 flex flex-col">
+            <h1 class="text-secondary text-5xl font-bold cursor-default">
+              A Tradição que Transforma Seu Visual
+            </h1>
+            <p class="text-white text-2xl cursor-default">
+              Conheça o poder que um corte de cabelo pode fazer na sua vida
+            </p>
+          </div>
 
-      <section></section>
+          <div class="flex flex-col">
+            <a>
+              <button
+                class="h-14 w-56 bg-secondary bg-opacity-70 text-white font-bold rounded-md text-base"
+              >
+                Agendar meu horário
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
 
-      <section></section>
+      <section id="about"></section>
 
-      <section></section>
+      <section id="services"></section>
 
-      <section></section>
+      <section id="products"></section>
 
-      <section></section>
+      <section id="prices"></section>
 
-      <section></section>
+      <section id="team"></section>
 
-      <section></section>
+      <section id="testimonials"></section>
+
+      <section id="contact"></section>
     </main>
   </body>
 </html>
