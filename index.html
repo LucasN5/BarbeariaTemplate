@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config-apply.js"></script>
+    <link href="./css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <title>Barbearia Template</title>
@@ -85,7 +87,7 @@
               <li>
                 <a>
                   <button
-                    class="text-xl text-white font-Ralewa hover:text-secondary ease-in duration-100"
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
                   >
                     Equipe
                   </button>
@@ -143,15 +145,282 @@
         </div>
       </section>
 
-      <section id="about"></section>
+      <section id="about" class="">
+        <div class="flex flex-row">
+          <div class="w-full">
+            <img
+              src="./assets/aboutBackground.jpg"
+              alt="Homem cortando cabelo"
+              class=""
+            />
+          </div>
 
-      <section id="services"></section>
+          <div
+            class="bg-primary flex flex-col justify-center items-center gap-20 w-full"
+          >
+            <h2 class="text-5xl font-bold text-secondary font-Raleway">
+              Quem somos ?
+            </h2>
+            <p class="text-lg text-white leading-relaxed font-NotoSans mx-44">
+              Somos uma barbearia dedicada a oferecer uma experiência de cuidado
+              masculino que vai além do corte de cabelo. Combinando tradição e
+              modernidade, nossa equipe de barbeiros experientes é comprometida
+              em proporcionar serviços de alta qualidade em um ambiente
+              acolhedor e estiloso. Aqui, cada detalhe é pensado para que você
+              se sinta renovado e confiante, desde o atendimento personalizado
+              até o acabamento impecável. Seja bem-vindo ao lugar onde estilo e
+              excelência se encontram.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <section id="products"></section>
+      <section id="services" class="h-screen">
+        <div
+          class="h-full bg-primary-light flex flex-col items-center justify-center gap-32"
+        >
+          <div class="flex flex-col justify-center items-center gap-5">
+            <h2 class="font-bold font-Raleway text-5xl text-secondary">
+              SERVIÇOS
+            </h2>
+            <p class="font-NotoSans text-white text-2xl">
+              Transforme Seu Estilo com Nossos Serviços Exclusivos
+            </p>
+          </div>
 
-      <section id="prices"></section>
+          <div class="">
+            <ul class="flex flex-row items-center justify-center gap-12">
+              <li
+                class="w-72 h-80 flex flex-col items-center justify-center gap-5 border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/tesouraIcone.png"
+                  alt="Um icone amarelo de tesoura de barbear"
+                  class="w-16 h-24"
+                />
+                <h3 class="text-white text-xl font-PlayfairDisplay">
+                  Corte de Cabelo e Barba
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Renove seu visual com um corte de cabelo e uma barba bem
+                  alinhada, feitos com precisão por nossos especialistas.
+                </p>
+              </li>
 
-      <section id="team"></section>
+              <li
+                class="w-72 h-80 flex flex-col items-center justify-center gap-5 border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/barbaIcone.png"
+                  alt="Um icone amarelo de uma barba"
+                />
+                <h3 class="text-white text-xl font-PlayfairDisplay">
+                  Barba e Tratamento Facial
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Além de modelar sua barba, oferecemos tratamentos faciais que
+                  deixam sua pele bem cuidada e saudável.
+                </p>
+              </li>
+
+              <li
+                class="w-72 h-80 flex flex-col items-center justify-center gap-5 border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/navalhaIcone.png"
+                  alt="Um icone amarelo de uma navalha de barbear"
+                />
+                <h3 class="text-white text-xl font-PlayfairDisplay">
+                  Barbear e Corte
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  O barbear perfeito e o corte ideal, com toda a precisão e
+                  estilo que você merece.
+                </p>
+              </li>
+
+              <li
+                class="w-72 h-80 flex flex-col items-center justify-center gap-5 border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/bigodeIcone.png"
+                  alt="Um icone amarelo de um bigode"
+                />
+                <h3 class="text-white text-xl">O grande dia</h3>
+                <p class="text-sm text-white text-center px-10">
+                  Para momentos especiais, oferecemos um serviço exclusivo,
+                  garantindo um visual impecável no seu grande dia.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="h-screen">
+        <div
+          class="h-full bg-primary flex flex-col items-center justify-center gap-28"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <h2 class="font-bold font-Raleway text-5xl text-secondary">
+              PRODUTOS
+            </h2>
+          </div>
+
+          <div>
+            <ul class="flex flex-row gap-12">
+              <li
+                class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/cremeBarbear2.webp"
+                  alt="Imagem de um creme de barba"
+                  class="w-40 h-40"
+                />
+                <h3 class="text-white text-2xl text-center">Creme de Barba</h3>
+                <p class="text-sm text-white text-center px-10">
+                  Proporciona um barbear suave, hidratando e protegendo a pele
+                  para um acabamento perfeito.
+                </p>
+                <p class="text-xl text-white">R$ 20,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 gap-2 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/shampooBarba.png"
+                  alt="Imagem de um produto de barbearia"
+                  class="w-20 h-40"
+                />
+                <h3 class="text-white text-2xl text-center">
+                  Shampoo de Barba e Cabelo
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Lava e nutre barba e cabelo, deixando-os macios, limpos e com
+                  um aroma refrescante.
+                </p>
+                <p class="text-white text-xl">R$ 15,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/penteBarba.png"
+                  alt="Imagem de um produto de barbearia"
+                  class="w-32 h-32"
+                />
+                <h3 class="text-white text-2xl text-center">
+                  Pente para Barba
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Ideal para modelar e desembaraçar a barba, garantindo um
+                  visual alinhado e bem cuidado.
+                </p>
+                <p class="text-xl text-white">R$ 10,00</p>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <button
+              class="w-36 h-12 flex items-center justify-center bg-secondary-light rounded-2xl text-white text-base font-bold px-4 py-5 transition-transform transform hover:scale-105 hover:brightness-100"
+            >
+              Mostrar mais
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="prices" class="h-screen">
+        <div class="h-full bg-primary-light flex flex-row">
+          <div class="w-1/2">
+            <img
+              src="./assets/priceBackground.jpg"
+              alt="Imagem de vários produtos de barbearia"
+              class="object-cover w-full h-full"
+            />
+          </div>
+
+          <div class="flex flex-col items-center justify-around w-1/2">
+            <div class="flex flex-col gap-3.5">
+              <h2 class="text-secondary text-4xl font-bold font-Raleway">
+                Lista de Preços
+              </h2>
+              <p class="text-white text-2xl font-extralight font-NotoSans">
+                Selecione o Serviço Ideal para o Seu Estilo
+              </p>
+            </div>
+
+            <div></div>
+
+            <div>
+              <button
+                class="w-36 h-12 flex items-center justify-center bg-secondary-light rounded-2xl text-white text-base font-bold px-4 py-5 transition-transform transform hover:scale-105 hover:brightness-100"
+              >
+                Agendar meu horário
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="h-screen">
+        <div
+          class="h-full flex flex-col items-center justify-center bg-primary gap-24"
+        >
+          <div class="w-full flex flex-row">
+            <h3
+              class="text-5xl text-secondary font-bold font-Raleway tracking-widest"
+            >
+              NOSSA EQUIPE
+            </h3>
+            <ul class="flex flex-row items-center justify-center gap-16">
+              <li
+                class="h-[560px] w-[350px] rounded-lg bg-barbeiro-card1 bg-no-repeat flex flex-col items-center justify-end pb-5"
+              >
+                <h3
+                  class="text-3xl text-white font-bold font-Raleway tracking-widest"
+                >
+                  BARBEIRO
+                </h3>
+                <p class="text-secondary font-bold text-xl">Lucas Silva</p>
+              </li>
+
+              <li
+                class="h-[560px] w-[350px] rounded-lg bg-barbeiro-card2 bg-no-repeat flex flex-col items-center justify-end pb-5"
+              >
+                <h3
+                  class="text-3xl text-white font-bold font-Raleway tracking-widest"
+                >
+                  FUNDADOR
+                </h3>
+                <p class="text-secondary font-bold text-xl">Henrique Souza</p>
+              </li>
+
+              <li
+                class="h-[560px] w-[350px] rounded-lg bg-barbeiro-card3 bg-no-repeat flex flex-col items-center justify-end pb-5"
+              >
+                <h3
+                  class="text-3xl text-white font-bold font-Raleway tracking-widest"
+                >
+                  BARBEIRO
+                </h3>
+                <p class="text-secondary font-bold text-xl">Thiago Mendes</p>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="flex flex-row gap-7">
+              <li class="w-4 h-4 rounded-full bg-secondary"></li>
+              <li class="w-4 h-4 rounded-full bg-white"></li>
+              <li class="w-4 h-4 rounded-full bg-white"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <section id="testimonials"></section>
 
