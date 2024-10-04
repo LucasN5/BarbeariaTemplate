@@ -358,9 +358,17 @@
                 <summary
                   class="flex flex-row items-center justify-between text-2xl font-Raleway font-light text-secondary-light list-none"
                 >
-                  Cabelo
+                  <p>Cabelo</p>
+                  <img
+                    src="./assets/arrow.png"
+                    alt="Icone de uma seta"
+                    class="arrow-icon transition-transform duration-300"
+                  />
                 </summary>
-                <ul class="flex flex-col gap-3 px-2">
+
+                <ul
+                  class="flex flex-col gap-3 p-2 transition-transform duration-300"
+                >
                   <li class="flex flex-row items-center justify-between">
                     <p class="text-xl font-NotoSans font-light text-white">
                       Corte Degrade
@@ -448,11 +456,16 @@
 
               <details class="cursor-pointer">
                 <summary
-                  class="text-2xl font-Raleway font-light text-secondary-light list-none"
+                  class="flex flex-row items-center justify-between text-2xl font-Raleway font-light text-secondary-light list-none"
                 >
-                  Barba
+                  <p>Barba</p>
+                  <img
+                    src="./assets/arrow.png"
+                    alt="Icone de uma seta"
+                    class="arrow-icon transition-transform duration-300"
+                  />
                 </summary>
-                <ul class="flex flex-col gap-2 px-2">
+                <ul class="flex flex-col gap-2 p-2">
                   <li class="flex flex-row items-center justify-between">
                     <p class="text-xl font-NotoSans font-light text-white">
                       Barba Completa
@@ -504,11 +517,16 @@
 
               <details class="cursor-pointer">
                 <summary
-                  class="text-2xl font-Raleway font-light text-secondary-light list-none"
+                  class="flex flex-row items-center justify-between text-2xl font-Raleway font-light text-secondary-light list-none"
                 >
-                  Combos
+                  <p>Combos</p>
+                  <img
+                    src="./assets/arrow.png"
+                    alt="Icone de uma seta"
+                    class="arrow-icon transition-transform duration-300"
+                  />
                 </summary>
-                <ul class="flex flex-col gap-2 px-2">
+                <ul class="flex flex-col gap-2 p-2">
                   <li class="flex flex-row items-center justify-between">
                     <p class="text-xl font-NotoSans font-light text-white">
                       Combo Corte de Cabelo + Barba Completa
@@ -560,11 +578,16 @@
 
               <details class="cursor-pointer">
                 <summary
-                  class="text-2xl font-Raleway font-light text-secondary-light list-none"
+                  class="flex flex-row items-center justify-between text-2xl font-Raleway font-light text-secondary-light list-none"
                 >
-                  Pacotes Especiais
+                  <p>Pacotes Especiais</p>
+                  <img
+                    src="./assets/arrow.png"
+                    alt="Icone de uma seta"
+                    class="arrow-icon transition-transform duration-300"
+                  />
                 </summary>
-                <ul class="flex flex-col gap-2 px-2">
+                <ul class="flex flex-col gap-2 p-2">
                   <li class="flex flex-row items-center justify-between">
                     <p class="text-xl font-NotoSans font-light text-white">
                       Pacote Mensal Cabelo & Barba
@@ -619,14 +642,14 @@
 
       <section id="team" class="h-screen">
         <div
-          class="h-full flex flex-col items-center justify-center bg-primary gap-24"
+          class="relative h-full flex flex-col items-center justify-center bg-primary gap-24"
         >
-          <div class="w-full flex flex-row">
-            <h3
-              class="text-5xl text-secondary font-bold font-Raleway tracking-widest"
-            >
-              NOSSA EQUIPE
-            </h3>
+          <h3
+            class="absolute left-24 self-start text-5xl text-secondary font-bold font-Raleway tracking-widest transform -rotate-90"
+          >
+            NOSSA EQUIPE
+          </h3>
+          <div class="w-full flex flex-row justify-center">
             <ul class="flex flex-row items-center justify-center gap-16">
               <li
                 class="h-[560px] w-[350px] rounded-lg bg-barbeiro-card1 bg-no-repeat flex flex-col items-center justify-end pb-5"
@@ -673,9 +696,22 @@
         </div>
       </section>
 
-      <section id="testimonials"></section>
+      <section id="testimonials" class="h-screen">
+        <div class="h-full bg-primary">
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+
+          <div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
 
       <section id="contact"></section>
     </main>
+    <script src="./js/arrowRotation.js"></script>
   </body>
 </html>
