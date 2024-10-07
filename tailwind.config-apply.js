@@ -13,6 +13,7 @@ tailwind.config = {
       fontFamily: {
         Raleway: ["Raleway", "sans-serif"],
         NotoSans: ["Noto+Sans", "sans-serif"],
+        Playfair: ["Playfair Display", "sans-serif"],
       },
 
       colors: {
@@ -22,6 +23,11 @@ tailwind.config = {
         "secondary-light": "#D5A353",
         white: "#fcfcfc",
       },
+    },
+
+    letterSpacing: {
+      widest: ".85rem",
+      wider: ".3rem",
     },
   },
   plugins: [],

@@ -14,6 +14,7 @@ module.exports = {
       fontFamily: {
         Raleway: ["Raleway", "sans-serif"],
         NotoSans: ["Noto+Sans", "sans-serif"],
+        Playfair: ["Playfair Display", "sans-serif"],
       },
 
       colors: {
@@ -23,6 +24,11 @@ module.exports = {
         "secondary-light": "#D5A353",
         white: "#fcfcfc",
       },
+    },
+
+    letterSpacing: {
+      widest: ".85rem",
+      wider: ".1rem",
     },
   },
   plugins: [],
