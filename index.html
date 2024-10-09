@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="url-to-cdn/splide.min.css" />
     <title>Barbearia Template</title>
   </head>
 
@@ -22,14 +23,18 @@
       <div class="container mx-auto">
         <nav class="flex flex-row items-center justify-between">
           <div class="flex flex-row items-center gap-2">
-            <img
-              src="./assets/tesouraIcone2.png"
-              alt="Icone de uma tesoura"
-              class="w-5 h-5"
-            />
-            <p class="text-xl text-white font-Raleway cursor-default">
-              Barbearia
-            </p>
+            <a
+              href="./index.html"
+              class="flex flex-row items-center gap-2 cursor-pointer"
+            >
+              <img
+                src="./assets/tesouraIcone2.png"
+                alt="Icone de uma tesoura"
+                class="w-5 h-5"
+              />
+
+              <p class="text-xl text-white font-Raleway">Barbearia</p>
+            </a>
           </div>
 
           <div>
@@ -326,11 +331,13 @@
           </div>
 
           <div>
-            <button
-              class="w-36 h-12 flex items-center justify-center bg-secondary-light rounded-2xl text-white text-base font-bold px-4 py-5 transition-transform transform hover:scale-105 hover:brightness-100"
-            >
-              Mostrar mais
-            </button>
+            <a href="./expandedProducts.html">
+              <button
+                class="w-36 h-12 flex items-center justify-center bg-secondary-light rounded-2xl text-white text-base font-bold px-4 py-5 transition-transform transform hover:scale-105 hover:brightness-100"
+              >
+                Mostrar mais
+              </button>
+            </a>
           </div>
         </div>
       </section>
@@ -642,7 +649,7 @@
         </div>
       </section>
 
-      <section id="linkTeam" class="h-screen">
+      <section id="linkTeam" class="splide h-screen">
         <div
           class="relative h-full flex flex-col items-center justify-center bg-primary gap-24"
         >
@@ -651,10 +658,12 @@
           >
             NOSSA EQUIPE
           </h3>
-          <div class="w-full flex flex-row justify-center">
-            <ul class="flex flex-row items-center justify-center gap-16">
+          <div class="splide__track w-full flex flex-row justify-center">
+            <ul
+              class="splide__list flex flex-row items-center justify-center gap-16"
+            >
               <li
-                class="h-[560px] w-[350px] rounded-lg bg-barbeiro-card1 bg-no-repeat flex flex-col items-center justify-end pb-5"
+                class="splide__splide h-[560px] w-[350px] rounded-lg bg-barbeiro-card1 bg-no-repeat flex flex-col items-center justify-end pb-5"
               >
                 <h3
                   class="text-3xl text-white font-bold font-Raleway tracking-wider"
@@ -665,7 +674,7 @@
               </li>
 
               <li
-                class="h-[560px] w-[350px] rounded-lg bg-barbeiro-card2 bg-no-repeat flex flex-col items-center justify-end pb-5"
+                class="splide__splide h-[560px] w-[350px] rounded-lg bg-barbeiro-card2 bg-no-repeat flex flex-col items-center justify-end pb-5"
               >
                 <h3
                   class="text-3xl text-white font-bold font-Raleway tracking-wider"
@@ -676,7 +685,7 @@
               </li>
 
               <li
-                class="h-[560px] w-[350px] rounded-lg bg-barbeiro-card3 bg-no-repeat flex flex-col items-center justify-end pb-5"
+                class="splide__splide h-[560px] w-[350px] rounded-lg bg-barbeiro-card3 bg-no-repeat flex flex-col items-center justify-end pb-5"
               >
                 <h3
                   class="text-3xl text-white font-bold font-Raleway tracking-wider"
@@ -709,7 +718,7 @@
             <p class="text-xl text-white font-normal font-NotoSans">
               Com 58 avaliações e uma nota de 4,9 no Google, <br />nossos
               clientes não apenas confiam, mas também<br />
-              recomendam nossa excelência em cada serviço
+              recomendam nossa excelência em cada serviço.
             </p>
           </div>
 
@@ -812,5 +821,6 @@
     </main>
     <script src="./js/arrowRotation.js"></script>
     <script src="./js/smoothScroll.js"></script>
+    <script src="js/carousel.js"></script>
   </body>
 </html>

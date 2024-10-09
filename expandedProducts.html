@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config-apply.js"></script>
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Produtos</title>
+  </head>
+
+  <body>
+    <header
+      class="fixed z-50 w-full pt-4 pb-4 bg-black border-b-secondary border-b-4"
+    >
+      <div class="container mx-auto">
+        <nav class="flex flex-row items-center justify-between">
+          <div class="flex flex-row items-center gap-2">
+            <a
+              href="./index.html"
+              class="flex flex-row items-center gap-2 cursor-pointer"
+            >
+              <img
+                src="./assets/tesouraIcone2.png"
+                alt="Icone de uma tesoura"
+                class="w-5 h-5"
+              />
+
+              <p class="text-xl text-white font-Raleway">Barbearia</p>
+            </a>
+          </div>
+
+          <div>
+            <ul class="flex flex-row gap-5">
+              <li>
+                <a href="./index.html#linkHero">
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Ínicio
+                  </button>
+                </a>
+              </li>
+
+              <li>
+                <a href="./index.html#linkAbout">
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Sobre nós
+                  </button>
+                </a>
+              </li>
+
+              <li>
+                <a href="./index.html#linkServices">
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Serviços
+                  </button>
+                </a>
+              </li>
+
+              <li>
+                <a href="./index.html#linkProducts">
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Produtos
+                  </button>
+                </a>
+              </li>
+
+              <li>
+                <a href="./index.html#linkPrices">
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Preços
+                  </button>
+                </a>
+              </li>
+
+              <li>
+                <a href="./index.html#linkTeam">
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Equipe
+                  </button>
+                </a>
+              </li>
+
+              <li>
+                <a href="./index.html#linkTestimonials">
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Depoimentos
+                  </button>
+                </a>
+              </li>
+
+              <li>
+                <a href="./index.html#linkContact">
+                  <button
+                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                  >
+                    Contato
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="linkProducts" class="min-h-screen">
+        <div
+          class="h-full bg-primary flex flex-col items-center justify-center gap-28 p-24"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <h2 class="font-bold font-Raleway text-5xl text-secondary">
+              PRODUTOS
+            </h2>
+          </div>
+
+          <div>
+            <ul class="grid grid-cols-3 items-center justify-center gap-12">
+              <li
+                class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/cremeBarbear2.webp"
+                  alt="Imagem de um creme de barba"
+                  class="w-40 h-40"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Creme de Barba
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Proporciona um barbear suave, hidratando e protegendo a pele
+                  para um acabamento perfeito.
+                </p>
+                <p class="text-xl text-white">R$ 20,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 gap-2 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/shampooBarba.png"
+                  alt="Imagem de um produto de barbearia"
+                  class="w-20 h-40"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Shampoo de Barba e Cabelo
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Lava e nutre barba e cabelo, deixando-os macios, limpos e com
+                  um aroma refrescante.
+                </p>
+                <p class="text-white text-xl">R$ 15,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/penteBarba.png"
+                  alt="Imagem de um produto de barbearia"
+                  class="w-32 h-32"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Pente para Barba
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Ideal para modelar e desembaraçar a barba, garantindo um
+                  visual alinhado e bem cuidado.
+                </p>
+                <p class="text-xl text-white">R$ 10,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/cremeBarbear2.webp"
+                  alt="Imagem de um creme de barba"
+                  class="w-40 h-40"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Creme de Barba
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Proporciona um barbear suave, hidratando e protegendo a pele
+                  para um acabamento perfeito.
+                </p>
+                <p class="text-xl text-white">R$ 20,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 gap-2 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/shampooBarba.png"
+                  alt="Imagem de um produto de barbearia"
+                  class="w-20 h-40"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Shampoo de Barba e Cabelo
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Lava e nutre barba e cabelo, deixando-os macios, limpos e com
+                  um aroma refrescante.
+                </p>
+                <p class="text-white text-xl">R$ 15,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/penteBarba.png"
+                  alt="Imagem de um produto de barbearia"
+                  class="w-32 h-32"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Pente para Barba
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Ideal para modelar e desembaraçar a barba, garantindo um
+                  visual alinhado e bem cuidado.
+                </p>
+                <p class="text-xl text-white">R$ 10,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/cremeBarbear2.webp"
+                  alt="Imagem de um creme de barba"
+                  class="w-40 h-40"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Creme de Barba
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Proporciona um barbear suave, hidratando e protegendo a pele
+                  para um acabamento perfeito.
+                </p>
+                <p class="text-xl text-white">R$ 20,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 gap-2 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/shampooBarba.png"
+                  alt="Imagem de um produto de barbearia"
+                  class="w-20 h-40"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Shampoo de Barba e Cabelo
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Lava e nutre barba e cabelo, deixando-os macios, limpos e com
+                  um aroma refrescante.
+                </p>
+                <p class="text-white text-xl">R$ 15,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/penteBarba.png"
+                  alt="Imagem de um produto de barbearia"
+                  class="w-32 h-32"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Pente para Barba
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Ideal para modelar e desembaraçar a barba, garantindo um
+                  visual alinhado e bem cuidado.
+                </p>
+                <p class="text-xl text-white">R$ 10,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/cremeBarbear2.webp"
+                  alt="Imagem de um creme de barba"
+                  class="w-40 h-40"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Creme de Barba
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Proporciona um barbear suave, hidratando e protegendo a pele
+                  para um acabamento perfeito.
+                </p>
+                <p class="text-xl text-white">R$ 20,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 gap-2 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/shampooBarba.png"
+                  alt="Imagem de um produto de barbearia"
+                  class="w-20 h-40"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Shampoo de Barba e Cabelo
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Lava e nutre barba e cabelo, deixando-os macios, limpos e com
+                  um aroma refrescante.
+                </p>
+                <p class="text-white text-xl">R$ 15,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/penteBarba.png"
+                  alt="Imagem de um produto de barbearia"
+                  class="w-32 h-32"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Pente para Barba
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Ideal para modelar e desembaraçar a barba, garantindo um
+                  visual alinhado e bem cuidado.
+                </p>
+                <p class="text-xl text-white">R$ 10,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/cremeBarbear2.webp"
+                  alt="Imagem de um creme de barba"
+                  class="w-40 h-40"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Creme de Barba
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Proporciona um barbear suave, hidratando e protegendo a pele
+                  para um acabamento perfeito.
+                </p>
+                <p class="text-xl text-white">R$ 20,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 gap-2 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/shampooBarba.png"
+                  alt="Imagem de um produto de barbearia"
+                  class="w-20 h-40"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Shampoo de Barba e Cabelo
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Lava e nutre barba e cabelo, deixando-os macios, limpos e com
+                  um aroma refrescante.
+                </p>
+                <p class="text-white text-xl">R$ 15,00</p>
+              </li>
+
+              <li
+                class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+              >
+                <img
+                  src="./assets/penteBarba.png"
+                  alt="Imagem de um produto de barbearia"
+                  class="w-32 h-32"
+                />
+                <h3 class="text-white text-2xl text-center font-Playfair">
+                  Pente para Barba
+                </h3>
+                <p class="text-sm text-white text-center px-10">
+                  Ideal para modelar e desembaraçar a barba, garantindo um
+                  visual alinhado e bem cuidado.
+                </p>
+                <p class="text-xl text-white">R$ 10,00</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
