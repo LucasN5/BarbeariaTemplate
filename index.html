@@ -824,7 +824,7 @@
 
       <section id="linkContact" class="h-screen">
         <div
-          class="h-full flex flex-col px-10 gap-6 justify-center items-center bg-primary"
+          class="h-full flex flex-col px-10 gap-20 justify-center items-center bg-primary"
         >
           <div class="flex flex-col items-center justify-center">
             <h3 class="font-bold font-Raleway text-5xl text-secondary">
@@ -832,7 +832,7 @@
             </h3>
           </div>
 
-          <div class="flex flex-row items-center justify-center gap-6">
+          <div class="flex flex-row items-center justify-center gap-10">
             <div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.634878609463!2d-46.41669788834435!3d-24.008667178405368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1db3e0b0e28d%3A0x25e08af1debc4864!2sAv.%20Pres.%20Costa%20e%20Silva%2C%20527%20-%20Boqueir%C3%A3o%2C%20Praia%20Grande%20-%20SP%2C%2011701-000!5e0!3m2!1spt-BR!2sbr!4v1728163917699!5m2!1spt-BR!2sbr"
@@ -884,55 +884,65 @@
     </main>
 
     <footer class="h-40">
-      <div
-        class="h-full bg-primary-light flex flex-row items-center justify-around"
-      >
-        <div class="flex flex-row items-center gap-2">
-          <a
-            href="./index.html"
-            class="flex flex-row items-center gap-2 cursor-pointer"
-          >
-            <img
-              src="./assets/tesouraIcone2.png"
-              alt="Icone de uma tesoura"
-              class="w-7 h-7"
-            />
+      <div class="h-full bg-primary-light flex flex-col justify-center gap-10">
+        <div class="flex flex-row items-center justify-around">
+          <div class="flex flex-row items-center gap-2">
+            <a
+              href="./index.html"
+              class="flex flex-row items-center gap-2 cursor-pointer"
+            >
+              <img
+                src="./assets/tesouraIcone2.png"
+                alt="Icone de uma tesoura"
+                class="w-7 h-7"
+              />
 
-            <p class="text-2xl text-white font-Raleway font-semibold">
-              Barbearia
+              <p class="text-2xl text-white font-Raleway font-semibold">
+                Barbearia
+              </p>
+            </a>
+          </div>
+
+          <div>
+            <ul class="flex flex-row gap-5">
+              <li
+                class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-secondary-light transition-transform transform hover:scale-105 cursor-pointer"
+              >
+                <img src="./assets/facebookIcon.svg" class="w-5 h-5" />
+              </li>
+              <li
+                class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-secondary-light transition-transform transform hover:scale-105 cursor-pointer"
+              >
+                <img src="./assets/instagramIcon.svg" class="w-5 h-5" />
+              </li>
+              <li
+                class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-secondary-light transition-transform transform hover:scale-105 cursor-pointer"
+              >
+                <img src="./assets/tiktokIcon.svg" class="w-5 h-5" />
+              </li>
+              <li
+                class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-secondary-light transition-transform transform hover:scale-105 cursor-pointer"
+              >
+                <img src="./assets/youtubeIcon.svg" class="w-5 h-5" />
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="w-56 text-xl text-secondary font-bold font-Raleway">
+              Estilo e tradição, a um corte de distância.
             </p>
-          </a>
+          </div>
         </div>
 
-        <div>
-          <ul class="flex flex-row gap-5">
-            <li
-              class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-secondary-light transition-transform transform hover:scale-105 cursor-pointer"
-            >
-              <img src="./assets/facebookIcon.svg" class="w-5 h-5" />
-            </li>
-            <li
-              class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-secondary-light transition-transform transform hover:scale-105 cursor-pointer"
-            >
-              <img src="./assets/instagramIcon.svg" class="w-5 h-5" />
-            </li>
-            <li
-              class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-secondary-light transition-transform transform hover:scale-105 cursor-pointer"
-            >
-              <img src="./assets/tiktokIcon.svg" class="w-5 h-5" />
-            </li>
-            <li
-              class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-secondary-light transition-transform transform hover:scale-105 cursor-pointer"
-            >
-              <img src="./assets/youtubeIcon.svg" class="w-5 h-5" />
-            </li>
-          </ul>
-        </div>
+        <div class="flex flex-row justify-around">
+          <div>
+            <p class="text-white-dark font-NotoSans">@ 2024 Barbearia.com</p>
+          </div>
 
-        <div>
-          <p class="text-xl text-white font-semibold font-Raleway">
-            Estilo e tradição, a um corte de distância.
-          </p>
+          <div>
+            <p class="text-white-dark font-NotoSans">Powered by Lucas Nunes</p>
+          </div>
         </div>
       </div>
     </footer>
@@ -940,6 +950,7 @@
     <script src="./js/arrowRotation.js"></script>
     <script src="./js/smoothScroll.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/smoothDetails.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   </body>
 </html>
