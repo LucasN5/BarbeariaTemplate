@@ -12,7 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="url-to-cdn/splide.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
     <title>Barbearia Template</title>
   </head>
 
@@ -30,10 +34,12 @@
               <img
                 src="./assets/tesouraIcone2.png"
                 alt="Icone de uma tesoura"
-                class="w-5 h-5"
+                class="w-7 h-7"
               />
 
-              <p class="text-xl text-white font-Raleway">Barbearia</p>
+              <p class="text-2xl text-white font-Raleway font-semibold">
+                Barbearia
+              </p>
             </a>
           </div>
 
@@ -42,7 +48,7 @@
               <li>
                 <a href="#linkHero">
                   <button
-                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                    class="text-xl text-white-dark font-Raleway hover:text-secondary ease-in duration-100"
                   >
                     Ínicio
                   </button>
@@ -52,7 +58,7 @@
               <li>
                 <a href="#linkAbout">
                   <button
-                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                    class="text-xl text-white-dark font-Raleway hover:text-secondary ease-in duration-100"
                   >
                     Sobre nós
                   </button>
@@ -62,7 +68,7 @@
               <li>
                 <a href="#linkServices">
                   <button
-                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                    class="text-xl text-white-dark font-Raleway hover:text-secondary ease-in duration-100"
                   >
                     Serviços
                   </button>
@@ -72,7 +78,7 @@
               <li>
                 <a href="#linkProducts">
                   <button
-                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                    class="text-xl text-white-dark font-Raleway hover:text-secondary ease-in duration-100"
                   >
                     Produtos
                   </button>
@@ -82,7 +88,7 @@
               <li>
                 <a href="#linkPrices">
                   <button
-                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                    class="text-xl text-white-dark font-Raleway hover:text-secondary ease-in duration-100"
                   >
                     Preços
                   </button>
@@ -92,7 +98,7 @@
               <li>
                 <a href="#linkTeam">
                   <button
-                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                    class="text-xl text-white-dark font-Raleway hover:text-secondary ease-in duration-100"
                   >
                     Equipe
                   </button>
@@ -102,7 +108,7 @@
               <li>
                 <a href="#linkTestimonials">
                   <button
-                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                    class="text-xl text-white-dark font-Raleway hover:text-secondary ease-in duration-100"
                   >
                     Depoimentos
                   </button>
@@ -112,7 +118,7 @@
               <li>
                 <a href="#linkContact">
                   <button
-                    class="text-xl text-white font-Raleway hover:text-secondary ease-in duration-100"
+                    class="text-xl text-white-dark font-Raleway hover:text-secondary ease-in duration-100"
                   >
                     Contato
                   </button>
@@ -127,25 +133,27 @@
     <main>
       <section id="linkHero" class="relative h-screen">
         <div
-          class="bg-hero-background h-full w-full flex flex-col justify-center items-start pl-5 gap-20"
+          class="bg-hero-background h-full w-full flex flex-col justify-center items-start"
         >
-          <div class="gap-6 flex flex-col">
-            <h1 class="text-secondary text-5xl font-bold cursor-default">
-              A Tradição que Transforma Seu Visual
-            </h1>
-            <p class="text-white text-2xl cursor-default">
-              Conheça o poder que um corte de cabelo pode fazer na sua vida
-            </p>
-          </div>
+          <div class="container mx-16 flex flex-col gap-10">
+            <div class="gap-3 flex flex-col">
+              <h1 class="text-secondary text-5xl font-bold cursor-default">
+                A Tradição que Transforma Seu Visual
+              </h1>
+              <p class="text-white text-2xl cursor-default">
+                Conheça o poder que um corte de cabelo pode fazer na sua vida
+              </p>
+            </div>
 
-          <div class="flex flex-col">
-            <a>
-              <button
-                class="h-14 w-56 bg-secondary bg-opacity-70 text-white font-bold rounded-md text-base transition-transform transform hover:scale-105"
-              >
-                Agendar meu horário
-              </button>
-            </a>
+            <div class="flex flex-col">
+              <a>
+                <button
+                  class="h-14 w-56 bg-secondary bg-opacity-70 text-white font-bold rounded-md text-base transition-transform transform hover:scale-105"
+                >
+                  Agendar meu horário
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -182,7 +190,7 @@
 
       <section id="linkServices" class="h-screen">
         <div
-          class="h-full bg-primary-light flex flex-col items-center justify-center gap-32"
+          class="h-full bg-primary-light flex flex-col items-center justify-center gap-24"
         >
           <div class="flex flex-col justify-center items-center gap-5">
             <h2 class="font-bold font-Raleway text-5xl text-secondary">
@@ -201,9 +209,9 @@
                 <img
                   src="./assets/tesouraIcone.png"
                   alt="Um icone amarelo de tesoura de barbear"
-                  class="w-16 h-24"
+                  class="object-contain"
                 />
-                <h3 class="text-white text-xl font-PlayfairDisplay">
+                <h3 class="text-white text-xl font-semibold font-Playfair">
                   Corte de Cabelo e Barba
                 </h3>
                 <p class="text-sm text-white text-center px-10">
@@ -218,8 +226,9 @@
                 <img
                   src="./assets/barbaIcone.png"
                   alt="Um icone amarelo de uma barba"
+                  class="object-contain"
                 />
-                <h3 class="text-white text-xl font-PlayfairDisplay">
+                <h3 class="text-white text-xl font-semibold font-Playfair">
                   Barba e Tratamento Facial
                 </h3>
                 <p class="text-sm text-white text-center px-10">
@@ -234,8 +243,9 @@
                 <img
                   src="./assets/navalhaIcone.png"
                   alt="Um icone amarelo de uma navalha de barbear"
+                  class="object-contain"
                 />
-                <h3 class="text-white text-xl font-PlayfairDisplay">
+                <h3 class="text-white text-xl font-semibold font-Playfair">
                   Barbear e Corte
                 </h3>
                 <p class="text-sm text-white text-center px-10">
@@ -250,8 +260,11 @@
                 <img
                   src="./assets/bigodeIcone.png"
                   alt="Um icone amarelo de um bigode"
+                  class="object-contain"
                 />
-                <h3 class="text-white text-xl">O grande dia</h3>
+                <h3 class="text-white text-xl font-semibold font-Playfair">
+                  O grande dia
+                </h3>
                 <p class="text-sm text-white text-center px-10">
                   Para momentos especiais, oferecemos um serviço exclusivo,
                   garantindo um visual impecável no seu grande dia.
@@ -276,6 +289,7 @@
             <ul class="flex flex-row gap-12">
               <li
                 class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+                data-url="https://wa.me/5513981980231?text=Oi,%20gostaria%20de%20reservar%20este%20creme%20de%20barba."
               >
                 <img
                   src="./assets/cremeBarbear2.webp"
@@ -289,11 +303,12 @@
                   Proporciona um barbear suave, hidratando e protegendo a pele
                   para um acabamento perfeito.
                 </p>
-                <p class="text-xl text-white">R$ 20,00</p>
+                <p class="text-xl text-white font-semibold">R$ 20,00</p>
               </li>
 
               <li
                 class="w-72 h-96 p-5 gap-2 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+                data-url="https://wa.me/5513981980231?text=Oi,%20gostaria%20de%20reservar%20este%20shampoo%20de%20barba%20e%20cabelo."
               >
                 <img
                   src="./assets/shampooBarba.png"
@@ -307,11 +322,12 @@
                   Lava e nutre barba e cabelo, deixando-os macios, limpos e com
                   um aroma refrescante.
                 </p>
-                <p class="text-white text-xl">R$ 15,00</p>
+                <p class="text-white text-xl font-semibold">R$ 15,00</p>
               </li>
 
               <li
                 class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
+                data-url="https://wa.me/5513981980231?text=Oi,%20gostaria%20de%20reservar%20este%20pente%20para%20barba."
               >
                 <img
                   src="./assets/penteBarba.png"
@@ -325,7 +341,7 @@
                   Ideal para modelar e desembaraçar a barba, garantindo um
                   visual alinhado e bem cuidado.
                 </p>
-                <p class="text-xl text-white">R$ 10,00</p>
+                <p class="text-xl text-white font-semibold">R$ 10,00</p>
               </li>
             </ul>
           </div>
@@ -367,7 +383,7 @@
                 <summary
                   class="flex flex-row items-center justify-between text-2xl font-Raleway font-light text-secondary-light list-none"
                 >
-                  <p>Cabelo</p>
+                  <p class="font-semibold">Cabelo</p>
                   <img
                     src="./assets/arrow.png"
                     alt="Icone de uma seta"
@@ -382,7 +398,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Corte Degrade
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 50,00
                     </p>
                   </li>
@@ -391,7 +407,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Corte Fade
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 45,00
                     </p>
                   </li>
@@ -400,7 +416,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Corte Undercut
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 50,00
                     </p>
                   </li>
@@ -409,7 +425,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Corte Militar
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 50,00
                     </p>
                   </li>
@@ -418,7 +434,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Hidratação
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 20,00
                     </p>
                   </li>
@@ -427,7 +443,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Luzes/Reflexos
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 60,00
                     </p>
                   </li>
@@ -436,7 +452,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Pigmentação
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 25,00
                     </p>
                   </li>
@@ -445,7 +461,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Progressiva Masculina
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 70,00
                     </p>
                   </li>
@@ -454,7 +470,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Relaxamento
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 20,00
                     </p>
                   </li>
@@ -467,7 +483,7 @@
                 <summary
                   class="flex flex-row items-center justify-between text-2xl font-Raleway font-light text-secondary-light list-none"
                 >
-                  <p>Barba</p>
+                  <p class="font-semibold">Barba</p>
                   <img
                     src="./assets/arrow.png"
                     alt="Icone de uma seta"
@@ -479,7 +495,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Barba Completa
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 30,00
                     </p>
                   </li>
@@ -488,7 +504,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Barba com Desenho
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 45,00
                     </p>
                   </li>
@@ -497,7 +513,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Cavanhaque
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 30,00
                     </p>
                   </li>
@@ -506,7 +522,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Pigmentação
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 15,00
                     </p>
                   </li>
@@ -515,7 +531,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Desembaraço e Hidratação
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 25,00
                     </p>
                   </li>
@@ -528,7 +544,7 @@
                 <summary
                   class="flex flex-row items-center justify-between text-2xl font-Raleway font-light text-secondary-light list-none"
                 >
-                  <p>Combos</p>
+                  <p class="font-semibold">Combos</p>
                   <img
                     src="./assets/arrow.png"
                     alt="Icone de uma seta"
@@ -540,7 +556,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Combo Corte de Cabelo + Barba Completa
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 60,00
                     </p>
                   </li>
@@ -549,7 +565,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Combo Corte de Cabelo + Barba com Desenho
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 75,00
                     </p>
                   </li>
@@ -558,7 +574,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Combo Corte Fade + Barba Cheia
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 70,00
                     </p>
                   </li>
@@ -567,7 +583,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Combo Corte Militar + Barba Completa
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 50,00
                     </p>
                   </li>
@@ -576,7 +592,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       O Grande Dia (Cabelo + Barba + Tratamento)
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 100,00
                     </p>
                   </li>
@@ -589,7 +605,7 @@
                 <summary
                   class="flex flex-row items-center justify-between text-2xl font-Raleway font-light text-secondary-light list-none"
                 >
-                  <p>Pacotes Especiais</p>
+                  <p class="font-semibold">Pacotes Especiais</p>
                   <img
                     src="./assets/arrow.png"
                     alt="Icone de uma seta"
@@ -601,7 +617,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Pacote Mensal Cabelo & Barba
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 260,00
                     </p>
                   </li>
@@ -610,7 +626,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Pacote Quinzenal Cabelo & Barba
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 150,00
                     </p>
                   </li>
@@ -619,7 +635,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Pacote Mensal Cabelo
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 90,00
                     </p>
                   </li>
@@ -628,7 +644,7 @@
                     <p class="text-xl font-NotoSans font-light text-white">
                       Pacote Quinzenal Cabelo
                     </p>
-                    <p class="text-xl font-NotoSans font-light text-white">
+                    <p class="text-xl font-NotoSans font-light text-secondary">
                       R$ 45,00
                     </p>
                   </li>
@@ -649,11 +665,12 @@
         </div>
       </section>
 
-      <section id="linkTeam" class="splide h-screen">
+      <section id="linkTeam" class="splide splide-teams h-screen">
         <div
           class="relative h-full flex flex-col items-center justify-center bg-primary gap-24"
         >
           <h3
+            aria-labelledby="carousel-heading"
             class="absolute left-10 top-96 self-start text-5xl text-secondary font-bold font-Raleway tracking-widest transform -rotate-90"
           >
             NOSSA EQUIPE
@@ -663,7 +680,7 @@
               class="splide__list flex flex-row items-center justify-center gap-16"
             >
               <li
-                class="splide__splide h-[560px] w-[350px] rounded-lg bg-barbeiro-card1 bg-no-repeat flex flex-col items-center justify-end pb-5"
+                class="splide__slide h-[560px] w-[350px] rounded-lg bg-barbeiro-card1 bg-no-repeat flex flex-col items-center justify-end pb-5"
               >
                 <h3
                   class="text-3xl text-white font-bold font-Raleway tracking-wider"
@@ -674,7 +691,7 @@
               </li>
 
               <li
-                class="splide__splide h-[560px] w-[350px] rounded-lg bg-barbeiro-card2 bg-no-repeat flex flex-col items-center justify-end pb-5"
+                class="splide__slide h-[560px] w-[350px] rounded-lg bg-barbeiro-card2 bg-no-repeat flex flex-col items-center justify-end pb-5"
               >
                 <h3
                   class="text-3xl text-white font-bold font-Raleway tracking-wider"
@@ -685,7 +702,40 @@
               </li>
 
               <li
-                class="splide__splide h-[560px] w-[350px] rounded-lg bg-barbeiro-card3 bg-no-repeat flex flex-col items-center justify-end pb-5"
+                class="splide__slide h-[560px] w-[350px] rounded-lg bg-barbeiro-card3 bg-no-repeat flex flex-col items-center justify-end pb-5"
+              >
+                <h3
+                  class="text-3xl text-white font-bold font-Raleway tracking-wider"
+                >
+                  BARBEIRO
+                </h3>
+                <p class="text-secondary font-bold text-xl">Thiago Mendes</p>
+              </li>
+
+              <li
+                class="splide__slide h-[560px] w-[350px] rounded-lg bg-barbeiro-card1 bg-no-repeat flex flex-col items-center justify-end pb-5"
+              >
+                <h3
+                  class="text-3xl text-white font-bold font-Raleway tracking-wider"
+                >
+                  BARBEIRO
+                </h3>
+                <p class="text-secondary font-bold text-xl">Hugo Souza</p>
+              </li>
+
+              <li
+                class="splide__slide h-[560px] w-[350px] rounded-lg bg-barbeiro-card2 bg-no-repeat flex flex-col items-center justify-end pb-5"
+              >
+                <h3
+                  class="text-3xl text-white font-bold font-Raleway tracking-wider"
+                >
+                  FUNDADOR
+                </h3>
+                <p class="text-secondary font-bold text-xl">Henrique Souza</p>
+              </li>
+
+              <li
+                class="splide__slide h-[560px] w-[350px] rounded-lg bg-barbeiro-card3 bg-no-repeat flex flex-col items-center justify-end pb-5"
               >
                 <h3
                   class="text-3xl text-white font-bold font-Raleway tracking-wider"
@@ -707,9 +757,12 @@
         </div>
       </section>
 
-      <section id="linkTestimonials" class="h-screen">
+      <section
+        id="linkTestimonials"
+        class="splide splide-testimonials h-screen"
+      >
         <div
-          class="h-full bg-primary flex flex-row items-center justify-center px-10"
+          class="h-full bg-primary-light flex flex-row items-center justify-center px-10"
         >
           <div class="flex flex-col w-1/2 items-start gap-9 px-5">
             <h3 class="text-5xl text-secondary font-bold font-Raleway">
@@ -722,46 +775,48 @@
             </p>
           </div>
 
-          <div class="w-1/2 grid grid-cols-2 gap-14 items-stretch">
-            <div
-              class="flex flex-col items-center justify-center p-5 gap-5 bg-primary-light border-2 border-secondary rounded h-full"
-            >
-              <img
-                src="./assets/pfpReview1.png"
-                alt="Foto de perfil de um usuário"
-              />
-              <h3 class="text-base font-semibold text-secondary font-Raleway">
-                Luiz Fernando
-              </h3>
-              <p class="text-sm text-white font-NotoSans text-center">
-                "Já frequentei várias barbearias, mas nenhuma se compara a esta.
-                O atendimento é sempre impecável, e os barbeiros realmente
-                entendem o que você quer. Saio sempre satisfeito e com um corte
-                que me faz sentir renovado. Super recomendo!"
-              </p>
-              <p class="text-sm text-white font-NotoSans">
-                ⭐⭐⭐⭐⭐ | Excelente Experiência!
-              </p>
-            </div>
+          <div class="splide__track w-1/2">
+            <div class="splide__list grid grid-cols-2 gap-14 items-stretch">
+              <div
+                class="splide__slide flex flex-col items-center justify-center p-5 gap-5 bg-primary border-2 border-secondary rounded h-full"
+              >
+                <img
+                  src="./assets/pfpReview1.png"
+                  alt="Foto de perfil de um usuário"
+                />
+                <h3 class="text-base font-semibold text-secondary font-Raleway">
+                  Luiz Fernando
+                </h3>
+                <p class="text-sm text-white font-NotoSans text-center">
+                  "Já frequentei várias barbearias, mas nenhuma se compara a
+                  esta. O atendimento é sempre impecável, e os barbeiros
+                  realmente entendem o que você quer. Saio sempre satisfeito e
+                  com um corte que me faz sentir renovado. Super recomendo!"
+                </p>
+                <p class="text-sm text-white font-NotoSans">
+                  ⭐⭐⭐⭐⭐ | Excelente Experiência!
+                </p>
+              </div>
 
-            <div
-              class="flex flex-col items-center justify-center p-5 gap-5 bg-primary-light border-2 border-secondary rounded h-full"
-            >
-              <img
-                src="./assets/pfpReview2.png"
-                alt="Foto de perfil de um usuário"
-              />
-              <h3 class="text-base font-semibold text-secondary font-Raleway">
-                João Pedro
-              </h3>
-              <p class="text-sm text-white font-NotoSans text-center">
-                "Ambiente acolhedor e barbeiros extremamente qualificados. Cada
-                detalhe é feito com muita atenção. Sou cliente fiel há mais de
-                um ano e sempre saio satisfeito!"
-              </p>
-              <p class="text-sm text-white font-NotoSans">
-                ⭐⭐⭐⭐⭐ | Qualidade e Profissionalismo
-              </p>
+              <div
+                class="splide__slide flex flex-col items-center justify-center p-5 gap-5 bg-primary border-2 border-secondary rounded h-full"
+              >
+                <img
+                  src="./assets/pfpReview2.png"
+                  alt="Foto de perfil de um usuário"
+                />
+                <h3 class="text-base font-semibold text-secondary font-Raleway">
+                  João Pedro
+                </h3>
+                <p class="text-sm text-white font-NotoSans text-center">
+                  "Ambiente acolhedor e barbeiros extremamente qualificados.
+                  Cada detalhe é feito com muita atenção. Sou cliente fiel há
+                  mais de um ano e sempre saio satisfeito!"
+                </p>
+                <p class="text-sm text-white font-NotoSans">
+                  ⭐⭐⭐⭐⭐ | Qualidade e Profissionalismo
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -769,58 +824,122 @@
 
       <section id="linkContact" class="h-screen">
         <div
-          class="h-full flex flex-row px-10 gap-6 items-center bg-primary-light"
+          class="h-full flex flex-col px-10 gap-6 justify-center items-center bg-primary"
         >
-          <div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.634878609463!2d-46.41669788834435!3d-24.008667178405368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1db3e0b0e28d%3A0x25e08af1debc4864!2sAv.%20Pres.%20Costa%20e%20Silva%2C%20527%20-%20Boqueir%C3%A3o%2C%20Praia%20Grande%20-%20SP%2C%2011701-000!5e0!3m2!1spt-BR!2sbr!4v1728163917699!5m2!1spt-BR!2sbr"
-              width="905"
-              height="509"
-              style="border: 0; filter: grayscale(100%) invert(100%)"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-bold font-Raleway text-5xl text-secondary">
+              CONTATO
+            </h3>
           </div>
 
-          <div class="flex flex-col gap-14">
-            <ul class="flex flex-col gap-7">
-              <li class="flex flex-col gap-5">
-                <h3 class="text-3xl text-secondary font-bold font-Raleway">
-                  Horário de Funcionamento
-                </h3>
-                <p class="text-2xl text-white font-normal font-NotoSans">
-                  Segunda e Sábado - 09:00 às 19:00
-                </p>
-                <p class="text-2xl text-white font-normal font-NotoSans">
-                  Terça a Sexta - 09:00 às 20:00
-                </p>
-              </li>
+          <div class="flex flex-row items-center justify-center gap-6">
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.634878609463!2d-46.41669788834435!3d-24.008667178405368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1db3e0b0e28d%3A0x25e08af1debc4864!2sAv.%20Pres.%20Costa%20e%20Silva%2C%20527%20-%20Boqueir%C3%A3o%2C%20Praia%20Grande%20-%20SP%2C%2011701-000!5e0!3m2!1spt-BR!2sbr!4v1728163917699!5m2!1spt-BR!2sbr"
+                width="905"
+                height="509"
+                style="border: 0; filter: grayscale(100%) invert(100%)"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
 
-              <li class="flex flex-col gap-5">
-                <h3 class="text-3xl text-secondary font-bold font-Raleway">
-                  Endereço
-                </h3>
-                <p class="text-2xl text-white font-normal font-NotoSans">
-                  Rua Dr Ciro Carneiro , 704, casa, Guilhermina, Praia Grande,
-                  SP - 11702-200
-                </p>
-              </li>
-            </ul>
+            <div class="flex flex-col gap-14">
+              <ul class="flex flex-col gap-7">
+                <li class="flex flex-col gap-5">
+                  <h3 class="text-3xl text-secondary font-bold font-Raleway">
+                    Horário de Funcionamento
+                  </h3>
+                  <p class="text-2xl text-white font-normal font-NotoSans">
+                    Segunda e Sábado - 09:00 às 19:00
+                  </p>
+                  <p class="text-2xl text-white font-normal font-NotoSans">
+                    Terça a Sexta - 09:00 às 20:00
+                  </p>
+                </li>
 
-            <div class="flex flex-col items-center justify-center">
-              <button
-                class="w-52 h-14 flex items-center justify-center bg-secondary-light rounded-2xl text-white text-base font-bold px-4 py-5 transition-transform transform hover:scale-105 hover:brightness-100"
-              >
-                Agendar meu horário
-              </button>
+                <li class="flex flex-col gap-5">
+                  <h3 class="text-3xl text-secondary font-bold font-Raleway">
+                    Endereço
+                  </h3>
+                  <p class="text-2xl text-white font-normal font-NotoSans">
+                    Rua Dr Ciro Carneiro , 704, casa, Guilhermina, Praia Grande,
+                    SP - 11702-200
+                  </p>
+                </li>
+              </ul>
+
+              <div class="flex flex-col items-center justify-center">
+                <button
+                  class="w-52 h-14 flex items-center justify-center bg-secondary-light rounded-2xl text-white text-base font-bold px-4 py-5 transition-transform transform hover:scale-105 hover:brightness-100"
+                >
+                  Agendar meu horário
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="h-40">
+      <div
+        class="h-full bg-primary-light flex flex-row items-center justify-around"
+      >
+        <div class="flex flex-row items-center gap-2">
+          <a
+            href="./index.html"
+            class="flex flex-row items-center gap-2 cursor-pointer"
+          >
+            <img
+              src="./assets/tesouraIcone2.png"
+              alt="Icone de uma tesoura"
+              class="w-7 h-7"
+            />
+
+            <p class="text-2xl text-white font-Raleway font-semibold">
+              Barbearia
+            </p>
+          </a>
+        </div>
+
+        <div>
+          <ul class="flex flex-row gap-5">
+            <li
+              class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-secondary-light transition-transform transform hover:scale-105 cursor-pointer"
+            >
+              <img src="./assets/facebookIcon.svg" class="w-5 h-5" />
+            </li>
+            <li
+              class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-secondary-light transition-transform transform hover:scale-105 cursor-pointer"
+            >
+              <img src="./assets/instagramIcon.svg" class="w-5 h-5" />
+            </li>
+            <li
+              class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-secondary-light transition-transform transform hover:scale-105 cursor-pointer"
+            >
+              <img src="./assets/tiktokIcon.svg" class="w-5 h-5" />
+            </li>
+            <li
+              class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-secondary-light transition-transform transform hover:scale-105 cursor-pointer"
+            >
+              <img src="./assets/youtubeIcon.svg" class="w-5 h-5" />
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-xl text-white font-semibold font-Raleway">
+            Estilo e tradição, a um corte de distância.
+          </p>
+        </div>
+      </div>
+    </footer>
+
     <script src="./js/arrowRotation.js"></script>
     <script src="./js/smoothScroll.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   </body>
 </html>

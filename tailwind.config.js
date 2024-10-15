@@ -23,6 +23,7 @@ module.exports = {
         secondary: "#FBB034",
         "secondary-light": "#D5A353",
         white: "#fcfcfc",
+        "white-dark": "#DCDCDC ",
       },
     },
 

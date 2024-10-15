@@ -1,8 +1,5 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.13"
-  },
-  "dependencies": {
-    "@splidejs/splide": "^4.1.4"
   }
 }
