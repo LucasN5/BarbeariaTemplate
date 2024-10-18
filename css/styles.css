@@ -26,3 +26,13 @@ details ul {
   max-height: 0;
   transition: max-height 0.5s ease-in-out;
 }
+
+.splide__pagination__page .splide_customization {
+  background-color: #ff6347; /* Cor personalizada */
+  border-radius: 50%; /* Torna as bolinhas redondas */
+  width: 12px;
+  height: 12px;
+}
+.splide__pagination__page.is-active .splide_customization.is-active {
+  background-color: #000; /* Cor da bolinha ativa */
+}
