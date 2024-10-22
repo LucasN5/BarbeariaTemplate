@@ -49,4 +49,39 @@ details ul {
 
 .splide-teams .splide__arrow--next {
   right: -3rem !important;
+  background-color: #181818 !important;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #fbb034;
+}
+
+.splide-teams .splide__arrow--next svg {
+  fill: #fbb034 !important;
+}
+
+.splide-testimonials .splide__arrow--next {
+  right: -3rem !important;
+  background-color: #242322 !important;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #fbb034;
+}
+
+.splide-testimonials .splide__arrow--prev {
+  left: -1rem !important;
+  background-color: #242322 !important;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #fbb034;
+}
+
+.splide-testimonials .splide__arrow--next svg {
+  fill: #fbb034 !important;
+}
+
+.splide-testimonials .splide__arrow--prev svg {
+  fill: #fbb034 !important;
 }
