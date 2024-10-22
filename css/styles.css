@@ -27,12 +27,26 @@ details ul {
   transition: max-height 0.5s ease-in-out;
 }
 
-.splide__pagination__page .splide_customization {
-  background-color: #ff6347; /* Cor personalizada */
-  border-radius: 50%; /* Torna as bolinhas redondas */
-  width: 12px;
-  height: 12px;
+.splide__pagination {
+  bottom: -3rem !important;
+  gap: 28px !important;
 }
-.splide__pagination__page.is-active .splide_customization.is-active {
-  background-color: #000; /* Cor da bolinha ativa */
+
+.splide__pagination__page {
+  width: 12px !important;
+  height: 12px !important;
+  opacity: 1 !important;
+}
+
+.splide__pagination__page.is-active {
+  background-color: #fbb034 !important;
+  opacity: 1 !important;
+}
+
+.splide-teams .splide__arrow--prev {
+  display: none !important;
+}
+
+.splide-teams .splide__arrow--next {
+  right: -3rem !important;
 }

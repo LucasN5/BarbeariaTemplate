@@ -7,9 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: true, // Desativa a paginação
     arrows: true, // Habilita as setas de navegação
     drag: true, // Desativa o arrasto livre
-    direction: "ltr", // Permite navegação apenas da esquerda para a direita
+    paginationDirection: "ltr", // Permite navegação apenas da esquerda para a direita
     classes: {
-      page: "splide__pagination__page splide_customization",
+      prev: "splide__arrow--prev splide__teams__arrow",
+      next: "splide__arrow--next splide__teams__arrow",
     },
     breakpoints: {
       1024: {
@@ -30,9 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     arrows: true, // Habilita as setas de navegação
     drag: true, // Desativa o arrasto livre
     direction: "ltr", // Permite navegação apenas da esquerda para a direita
-    classes: {
-      page: "splide__pagination__page splide_customization",
-    },
+
     breakpoints: {
       1024: {
         perPage: 2, // Ajuste para tablets
