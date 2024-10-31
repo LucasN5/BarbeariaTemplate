@@ -27,6 +27,8 @@ details ul {
   transition: max-height 0.5s ease-in-out;
 }
 
+/* Slide Customization */
+
 .splide__pagination {
   bottom: -3rem !important;
   gap: 28px !important;
@@ -84,4 +86,20 @@ details ul {
 
 .splide-testimonials .splide__arrow--prev svg {
   fill: #fbb034 !important;
+}
+
+/* Google Maps breakpoint */
+
+@media (max-width: 1505px) {
+  iframe {
+    width: 700px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 764px) {
+  iframe {
+    width: 600px;
+    height: 300px;
+  }
 }

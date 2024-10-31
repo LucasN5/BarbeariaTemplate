@@ -133,14 +133,20 @@
     <main>
       <section id="linkHero" class="relative h-screen">
         <div
-          class="bg-hero-background h-full w-full flex flex-col justify-center items-start"
+          class="bg-hero-background bg-cover h-full flex flex-col justify-center xl:items-start min-[344px]:items-center"
         >
-          <div class="container mx-16 flex flex-col gap-10">
+          <div
+            class="px-4 md:px-8 lg:px-16 flex flex-col xl:items-start min-[344px]:items-center gap-10"
+          >
             <div class="gap-3 flex flex-col">
-              <h1 class="text-secondary text-5xl font-bold cursor-default">
+              <h1
+                class="text-secondary lg:text-5xl md:text-4xl sm:text-3xl min-[344px]:text-2xl font-bold cursor-default"
+              >
                 A Tradição que Transforma Seu Visual
               </h1>
-              <p class="text-white text-2xl cursor-default">
+              <p
+                class="text-white lg:text-2xl md:text-xl sm:text-lg min-[344px]:text-base cursor-default"
+              >
                 Conheça o poder que um corte de cabelo pode fazer na sua vida
               </p>
             </div>
@@ -148,7 +154,7 @@
             <div class="flex flex-col">
               <a>
                 <button
-                  class="h-14 w-56 bg-secondary bg-opacity-70 text-white font-bold rounded-md text-base transition-transform transform hover:scale-105"
+                  class="lg:h-14 lg:w-56 sm:h-12 sm:w-52 min-[344px]:h-10 min-[344px]:w-48 bg-secondary bg-opacity-70 text-white font-bold rounded-md lg:text-base min-[344px]:text-sm transition-transform transform hover:scale-105"
                 >
                   Agendar meu horário
                 </button>
@@ -159,17 +165,19 @@
       </section>
 
       <section id="linkAbout" class="h-screen">
-        <div class="h-full flex flex-row">
-          <div class="w-1/2">
+        <div
+          class="h-full flex xl:flex-row lg:flex-col-reverse lg:justify-center"
+        >
+          <div class="xl:w-1/2 lg:w-full">
             <img
               src="./assets/aboutBackground.jpg"
               alt="Homem cortando cabelo"
-              class="w-full h-full object-cover"
+              class="xl:w-full xl:h-full lg:w-1/2 lg:h-1/2 xl:object-cover lg:object-contain"
             />
           </div>
 
           <div
-            class="bg-primary flex flex-col justify-center items-center gap-20 w-1/2"
+            class="bg-primary flex flex-col justify-center items-center gap-20 xl:w-1/2 lg:w-full"
           >
             <div class="flex flex-col items-center gap-4">
               <h2 class="text-5xl font-bold text-secondary font-Raleway">
@@ -211,8 +219,8 @@
             </p>
           </div>
 
-          <div class="">
-            <ul class="flex flex-row items-center justify-center gap-12">
+          <div class="w-full px-4">
+            <ul class="flex flex-wrap justify-center gap-6 lg:gap-12">
               <li
                 class="w-72 h-80 object-contain flex flex-col items-center justify-center gap-5 border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105"
               >
@@ -296,7 +304,7 @@
           </div>
 
           <div>
-            <ul class="selectProduct flex flex-row gap-12">
+            <ul class="selectProduct flex flex-wrap justify-center gap-12">
               <li
                 class="w-72 h-96 p-5 flex flex-col items-center justify-around border-2 rounded-2xl border-secondary transition-transform transform hover:scale-105 cursor-pointer"
                 data-url="https://wa.me/5513981980231?text=Oi,%20gostaria%20de%20reservar%20este%20creme%20de%20barba."
@@ -687,7 +695,9 @@
           </h3>
 
           <!-- Splide Carousel -->
-          <div class="splide splide-teams w-full max-w-6xl">
+          <div
+            class="splide splide-teams xl:max-w-6xl lg:max-w-3xl min-[344px]:max-w-sm"
+          >
             <div class="splide__track">
               <ul class="splide__list">
                 <li
@@ -791,16 +801,20 @@
 
       <section id="linkTestimonials" class="h-screen">
         <div
-          class="h-full bg-primary-light flex flex-row items-center justify-center px-20"
+          class="h-full bg-primary-light flex xl:flex-row sm:flex-col items-center justify-center px-20 xl:gap-10 sm:gap-20"
         >
-          <div class="flex flex-col w-1/2 items-start gap-9 px-5">
+          <div
+            class="flex flex-col xl:w-1/2 sm:w-full xl:items-start sm:items-center gap-9"
+          >
             <h3 class="text-5xl text-secondary font-bold font-Raleway">
               O que os nossos clientes dizem sobre nós?
             </h3>
-            <p class="text-xl text-white font-normal font-NotoSans">
-              Com 58 avaliações e uma nota de 4,9 no Google, <br />nossos
-              clientes não apenas confiam, mas também<br />
-              recomendam nossa excelência em cada serviço.
+            <p
+              class="text-xl xl:w-3/5 sm:w-9/12 text-white font-normal font-NotoSans"
+            >
+              Com 58 avaliações e uma nota de 4,9 no Google, nossos clientes não
+              apenas confiam, mas também recomendam nossa excelência em cada
+              serviço.
             </p>
           </div>
 
@@ -907,13 +921,17 @@
           class="h-full flex flex-col px-10 gap-20 justify-center items-center bg-primary"
         >
           <div class="flex flex-col items-center justify-center">
-            <h3 class="font-bold font-Raleway text-5xl text-secondary">
+            <h3
+              class="font-bold font-Raleway 2xl:text-5xl md:text-4xl sm:text-3xl max-w-prose text-secondary"
+            >
               CONTATO
             </h3>
           </div>
 
-          <div class="flex flex-row items-center justify-center gap-10">
-            <div>
+          <div
+            class="flex xl:flex-row flex-col-reverse items-center justify-center 2xl:gap-10 gap-16"
+          >
+            <div class="mx-auto">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.634878609463!2d-46.41669788834435!3d-24.008667178405368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1db3e0b0e28d%3A0x25e08af1debc4864!2sAv.%20Pres.%20Costa%20e%20Silva%2C%20527%20-%20Boqueir%C3%A3o%2C%20Praia%20Grande%20-%20SP%2C%2011701-000!5e0!3m2!1spt-BR!2sbr!4v1728163917699!5m2!1spt-BR!2sbr"
                 width="905"
@@ -926,24 +944,36 @@
             </div>
 
             <div class="flex flex-col gap-14">
-              <ul class="flex flex-col gap-7">
+              <ul
+                class="flex 2xl:flex-col md:flex-row sm:justify-center 2xl:gap-7 gap-10"
+              >
                 <li class="flex flex-col gap-5">
-                  <h3 class="text-3xl text-secondary font-bold font-Raleway">
+                  <h3
+                    class="2xl:text-3xl md:text-2xl sm:text-xl max-w-prose text-secondary font-bold font-Raleway"
+                  >
                     Horário de Funcionamento
                   </h3>
-                  <p class="text-2xl text-white font-normal font-NotoSans">
+                  <p
+                    class="2xl:text-2xl md:text-xl sm:text-lg max-w-prose text-white font-normal font-NotoSans"
+                  >
                     Segunda e Sábado - 09:00 às 19:00
                   </p>
-                  <p class="text-2xl text-white font-normal font-NotoSans">
+                  <p
+                    class="2xl:text-2xl md:text-xl sm:text-lg max-w-prose text-white font-normal font-NotoSans"
+                  >
                     Terça a Sexta - 09:00 às 20:00
                   </p>
                 </li>
 
-                <li class="flex flex-col gap-5">
-                  <h3 class="text-3xl text-secondary font-bold font-Raleway">
+                <li class="flex flex-col gap-5 2xl:w-full sm:w-4/12">
+                  <h3
+                    class="2xl:text-3xl md:text-2xl sm:text-xl max-w-prose text-secondary font-bold font-Raleway"
+                  >
                     Endereço
                   </h3>
-                  <p class="text-2xl text-white font-normal font-NotoSans">
+                  <p
+                    class="2xl:text-2xl md:text-xl text-white sm:text-xl max-w-prose font-normal font-NotoSans"
+                  >
                     Rua Dr Ciro Carneiro , 704, casa, Guilhermina, Praia Grande,
                     SP - 11702-200
                   </p>
@@ -952,7 +982,7 @@
 
               <div class="flex flex-col items-center justify-center">
                 <button
-                  class="w-52 h-14 flex items-center justify-center bg-secondary-light rounded-2xl text-white text-base font-bold px-4 py-5 transition-transform transform hover:scale-105 hover:brightness-100"
+                  class="2xl:w-52 h-14 sm:w-44 flex items-center justify-center bg-secondary-light rounded-2xl text-white text-base font-bold px-4 py-5 transition-transform transform hover:scale-105 hover:brightness-100"
                 >
                   Agendar meu horário
                 </button>

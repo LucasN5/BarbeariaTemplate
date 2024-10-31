@@ -13,11 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
       next: "splide__arrow--next splide__teams__arrow",
     },
     breakpoints: {
-      1024: {
+      1280: {
         perPage: 2, // Ajuste para tablets
+        perMove: 2,
       },
-      768: {
+
+      1023: {
         perPage: 1, // Ajuste para mobile
+        perMove: 1,
       },
     },
   }).mount();
