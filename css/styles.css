@@ -103,3 +103,10 @@ details ul {
     height: 300px;
   }
 }
+
+@media (max-width: 690px) {
+  iframe {
+    width: 500px;
+    height: 250px;
+  }
+}
