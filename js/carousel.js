@@ -21,6 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
       1023: {
         perPage: 1, // Ajuste para mobile
         perMove: 1,
+        pagination: false,
+      },
+
+      505: {
+        arrows: false,
       },
     },
   }).mount();

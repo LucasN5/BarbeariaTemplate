@@ -27,7 +27,7 @@ details ul {
   transition: max-height 0.5s ease-in-out;
 }
 
-/* Slide Customization */
+/* Style for splide teams */
 
 .splide__pagination {
   bottom: -3rem !important;
@@ -45,10 +45,6 @@ details ul {
   opacity: 1 !important;
 }
 
-.splide-teams .splide__arrow--prev {
-  display: none !important;
-}
-
 .splide-teams .splide__arrow--next {
   right: -3rem !important;
   background-color: #181818 !important;
@@ -61,6 +57,31 @@ details ul {
 .splide-teams .splide__arrow--next svg {
   fill: #fbb034 !important;
 }
+
+.splide-teams .splide__arrow--prev {
+  display: none !important;
+}
+
+@media (max-width: 1023px) {
+  .splide-teams .splide__arrow--prev {
+    display: flex !important;
+  }
+
+  .splide-teams .splide__arrow--prev {
+    left: -3rem !important;
+    background-color: #181818 !important;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #fbb034;
+  }
+
+  .splide-teams .splide__arrow--prev svg {
+    fill: #fbb034 !important;
+  }
+}
+
+/* Style for splide testimonials*/
 
 .splide-testimonials .splide__arrow--next {
   right: -3rem !important;
@@ -107,6 +128,20 @@ details ul {
 @media (max-width: 690px) {
   iframe {
     width: 500px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 689px) {
+  iframe {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 470px) {
+  iframe {
+    width: 300px;
     height: 250px;
   }
 }
