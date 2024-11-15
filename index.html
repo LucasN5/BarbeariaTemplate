@@ -954,14 +954,22 @@
 
       <section id="linkTeam" class="h-screen">
         <div
-          class="h-full flex flex-col items-center justify-center bg-primary gap-24"
+          class="h-full flex flex-col items-center justify-center bg-primary gap-20 p-12"
         >
-          <h3
-            aria-labelledby="carousel-heading"
-            class="text-4xl text-secondary font-bold font-Raleway"
-          >
-            NOSSA EQUIPE
-          </h3>
+          <div class="flex flex-col items-center justify-center gap-5">
+            <h3
+              aria-labelledby="carousel-heading"
+              class="text-4xl text-secondary font-bold font-Raleway"
+            >
+              NOSSA EQUIPE
+            </h3>
+
+            <p
+              class="text-lg text-white font-medium font-NotoSans max-[504px]:block hidden"
+            >
+              Arraste para os lados para conhecer nossa equipe
+            </p>
+          </div>
 
           <!-- Splide Carousel -->
           <div
@@ -1068,9 +1076,9 @@
         </div>
       </section>
 
-      <section id="linkTestimonials" class="h-screen">
+      <section id="linkTestimonials" class="sm:h-screen min-[344px]:h-auto">
         <div
-          class="h-full bg-primary-light flex xl:flex-row min-[344px]:flex-col items-center justify-center px-20 xl:gap-10 min-[344px]:gap-20"
+          class="h-full bg-primary-light flex xl:flex-row min-[344px]:flex-col items-center justify-center px-20 xl:gap-10 min-[344px]:gap-20 max-[640px]:px-10 max-[640px]:py-10"
         >
           <div
             class="flex flex-col xl:w-1/2 sm:w-full xl:items-start min-[344px]:items-center gap-9"
@@ -1093,31 +1101,36 @@
             <div class="splide__track">
               <ul class="splide__list gap-14 items-stretch">
                 <li
-                  class="splide__slide min-[755px]:max-w-[500px] min-[755px]:max-h-[323px] min-[344px]:max-w-[400px] flex flex-col items-center justify-center p-5 gap-5 bg-primary border-2 border-secondary rounded"
+                  class="splide__slide min-[755px]:max-w-[500px] min-[755px]:max-h-[323px] min-[344px]:max-w-[400px]"
                 >
-                  <img
-                    src="./assets/pfpReview1.png"
-                    alt="Foto de perfil de um usuário"
-                    class="sm:w-20 sm:h-20 min-[344px]:w-16 min-[344px]:h-16"
-                  />
-                  <h3
-                    class="sm:text-base min-[344px]:text-sm font-semibold text-secondary font-Raleway"
+                  <div
+                    class="flex flex-col items-center justify-center p-5 gap-5 bg-primary border-2 border-secondary rounded"
                   >
-                    Luiz Fernando
-                  </h3>
-                  <p
-                    class="sm:text-sm min-[344px]:text-xs text-white font-NotoSans text-center"
-                  >
-                    "Já frequentei várias barbearias, mas nenhuma se compara a
-                    esta. O atendimento é sempre impecável, e os barbeiros
-                    realmente entendem o que você quer. Saio sempre satisfeito e
-                    com um corte que me faz sentir renovado. Super recomendo!"
-                  </p>
-                  <p
-                    class="sm:text-sm min-[344px]:text-xs text-white font-NotoSans"
-                  >
-                    ⭐⭐⭐⭐⭐ | Excelente Experiência!
-                  </p>
+                    <img
+                      src="./assets/pfpReview1.png"
+                      alt="Foto de perfil de um usuário"
+                      class="sm:w-20 sm:h-20 min-[344px]:w-16 min-[344px]:h-16"
+                    />
+                    <h3
+                      class="sm:text-base min-[344px]:text-sm text-wrap font-semibold text-secondary font-Raleway"
+                    >
+                      Luiz Fernando
+                    </h3>
+                    <p
+                      class="sm:text-sm min-[344px]:text-xs text-white font-NotoSans text-center"
+                    >
+                      "Já frequentei várias barbearias, mas nenhuma se compara a
+                      esta. O atendimento é sempre impecável, e os barbeiros
+                      realmente entendem o que você quer. Saio sempre satisfeito
+                      e com um corte que me faz sentir renovado. Super
+                      recomendo!"
+                    </p>
+                    <p
+                      class="sm:text-sm min-[344px]:text-xs text-white font-NotoSans"
+                    >
+                      ⭐⭐⭐⭐⭐ | Excelente Experiência!
+                    </p>
+                  </div>
                 </li>
 
                 <li
@@ -1192,13 +1205,13 @@
         </div>
       </section>
 
-      <section id="linkContact" class="h-screen">
+      <section id="linkContact" class="sm:h-screen min-[344px]:h-auto">
         <div
-          class="h-full flex flex-col px-10 gap-20 justify-center items-center bg-primary"
+          class="h-full flex flex-col px-10 gap-20 justify-center items-center bg-primary max-[640px]:px-5 max-[640px]:py-10"
         >
           <div class="flex flex-col items-center justify-center">
             <h3
-              class="font-bold font-Raleway 2xl:text-5xl md:text-4xl sm:text-3xl min-[344px]:text-2xl max-w-prose text-secondary"
+              class="font-bold font-Raleway 2xl:text-5xl md:text-4xl min-[344px]:text-3xl max-w-prose text-secondary"
             >
               CONTATO
             </h3>
@@ -1223,7 +1236,7 @@
               <ul
                 class="flex 2xl:flex-col md:flex-row min-[344px]:flex-col max-[768px]:items-center min-[344px]:justify-center 2xl:gap-7 gap-10"
               >
-                <li class="flex flex-col gap-5">
+                <li class="flex flex-col items-center gap-5">
                   <h3
                     class="2xl:text-3xl md:text-2xl sm:text-xl min-[344px]:text-lg max-w-prose text-secondary font-bold font-Raleway"
                   >
@@ -1241,16 +1254,14 @@
                   </p>
                 </li>
 
-                <li
-                  class="flex flex-col gap-5 2xl:w-full md:w-4/12 w- min-[344px]:w-6/12"
-                >
+                <li class="flex flex-col items-center gap-5">
                   <h3
-                    class="2xl:text-3xl md:text-2xl sm:text-xl min-[344px]:text-lg max-w-prose text-secondary font-bold font-Raleway"
+                    class="2xl:text-3xl md:text-2xl sm:text-xl min-[344px]:text-lg max-w-prose text-wrap text-secondary font-bold font-Raleway"
                   >
                     Endereço
                   </h3>
                   <p
-                    class="2xl:text-2xl md:text-xl text-white sm:text-lg min-[344px]:text-base max-w-prose font-normal font-NotoSans"
+                    class="2xl:text-2xl md:text-xl text-white sm:text-lg min-[344px]:text-base text-wrap max-w-prose font-normal font-NotoSans 2xl:w-full min-[344px]:w-3/4"
                   >
                     Rua Dr Ciro Carneiro , 704, casa, Guilhermina, Praia Grande,
                     SP - 11702-200
@@ -1326,7 +1337,9 @@
           </div>
         </div>
 
-        <div class="flex flex-row justify-around">
+        <div
+          class="flex sm:flex-row min-[344px]:flex-col min-[344px]:items-center min-[344px]:gap-5 justify-around"
+        >
           <div>
             <p class="text-white-dark font-NotoSans">@ 2024 Barbearia.com</p>
           </div>

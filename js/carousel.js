@@ -49,6 +49,12 @@ document.addEventListener("DOMContentLoaded", function () {
       768: {
         perPage: 1, // Ajuste para mobile
       },
+      625: {
+        arrows: false,
+      },
+      645: {
+        gap: 500,
+      },
     },
   }).mount();
 });
