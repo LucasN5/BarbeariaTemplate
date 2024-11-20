@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         arrows: false,
       },
       645: {
-        gap: 500,
+        gap: 20,
       },
     },
   }).mount();

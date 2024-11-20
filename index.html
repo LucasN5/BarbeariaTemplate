@@ -956,7 +956,9 @@
         <div
           class="h-full flex flex-col items-center justify-center bg-primary gap-20 p-12"
         >
-          <div class="flex flex-col items-center justify-center gap-5">
+          <div
+            class="flex flex-col max-[504px]:text-center items-center justify-center gap-5"
+          >
             <h3
               aria-labelledby="carousel-heading"
               class="text-4xl text-secondary font-bold font-Raleway"
@@ -978,7 +980,7 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li
-                  class="splide__slide h-[560px] max-w-[350px] rounded-lg bg-barbeiro-card1 bg-no-repeat flex flex-col items-center justify-end pb-5 mx-4"
+                  class="splide__slide h-[560px] w-auto rounded-lg bg-barbeiro-card1 bg-no-repeat flex flex-col items-center justify-end pb-5 mx-4"
                 >
                   <h3
                     class="text-3xl text-white font-bold font-Raleway tracking-wider"
@@ -1078,13 +1080,13 @@
 
       <section id="linkTestimonials" class="sm:h-screen min-[344px]:h-auto">
         <div
-          class="h-full bg-primary-light flex xl:flex-row min-[344px]:flex-col items-center justify-center px-20 xl:gap-10 min-[344px]:gap-20 max-[640px]:px-10 max-[640px]:py-10"
+          class="h-full bg-primary-light flex xl:flex-row min-[344px]:flex-col items-center justify-center xl:gap-10 min-[344px]:gap-20 max-[640px]:px-10 max-[640px]:py-10"
         >
           <div
-            class="flex flex-col xl:w-1/2 sm:w-full xl:items-start min-[344px]:items-center gap-9"
+            class="flex flex-col xl:w-1/2 sm:w-full xl:items-start min-[344px]:items-center max-[1279px]:text-center gap-9"
           >
             <h3
-              class="sm:text-5xl min-[344px]:text-3xl text-secondary font-bold font-Raleway"
+              class="sm:text-5xl max-[1023px]:mx-5 min-[344px]:text-3xl text-secondary font-bold font-Raleway"
             >
               O que os nossos clientes dizem sobre nós?
             </h3>
@@ -1097,11 +1099,13 @@
             </p>
           </div>
 
-          <div class="splide splide-testimonials w-full max-w-xl">
+          <div
+            class="splide splide-testimonials w-full max-w-xl max-[525px]:mx-16"
+          >
             <div class="splide__track">
               <ul class="splide__list gap-14 items-stretch">
                 <li
-                  class="splide__slide min-[755px]:max-w-[500px] min-[755px]:max-h-[323px] min-[344px]:max-w-[400px]"
+                  class="splide__slide min-[755px]:max-w-[500px] min-[755px]:max-h-[323px] min-[570px]:max-w-[300px] min-[344px]:max-w-[250px]"
                 >
                   <div
                     class="flex flex-col items-center justify-center p-5 gap-5 bg-primary border-2 border-secondary rounded"
@@ -1109,95 +1113,103 @@
                     <img
                       src="./assets/pfpReview1.png"
                       alt="Foto de perfil de um usuário"
-                      class="sm:w-20 sm:h-20 min-[344px]:w-16 min-[344px]:h-16"
                     />
                     <h3
-                      class="sm:text-base min-[344px]:text-sm text-wrap font-semibold text-secondary font-Raleway"
+                      class="text-base font-semibold text-secondary font-Raleway"
                     >
                       Luiz Fernando
                     </h3>
-                    <p
-                      class="sm:text-sm min-[344px]:text-xs text-white font-NotoSans text-center"
-                    >
+                    <p class="text-sm text-white font-NotoSans text-center">
                       "Já frequentei várias barbearias, mas nenhuma se compara a
                       esta. O atendimento é sempre impecável, e os barbeiros
                       realmente entendem o que você quer. Saio sempre satisfeito
                       e com um corte que me faz sentir renovado. Super
                       recomendo!"
                     </p>
-                    <p
-                      class="sm:text-sm min-[344px]:text-xs text-white font-NotoSans"
-                    >
+                    <p class="text-sm text-white font-NotoSans">
                       ⭐⭐⭐⭐⭐ | Excelente Experiência!
                     </p>
                   </div>
                 </li>
 
                 <li
-                  class="splide__slide min-[755px]:max-w-[500px] min-[755px]:max-h-[323px] min-[344px]:max-w-[400px] flex flex-col items-center justify-center p-5 gap-5 bg-primary border-2 border-secondary rounded"
+                  class="splide__slide min-[755px]:max-w-[500px] min-[755px]:max-h-[323px] min-[570px]:max-w-[300px] min-[344px]:max-w-[250px]"
                 >
-                  <img
-                    src="./assets/pfpReview2.png"
-                    alt="Foto de perfil de um usuário"
-                  />
-                  <h3
-                    class="text-base font-semibold text-secondary font-Raleway"
+                  <div
+                    class="flex flex-col items-center justify-center p-5 gap-5 bg-primary border-2 border-secondary rounded"
                   >
-                    João Pedro
-                  </h3>
-                  <p class="text-sm text-white font-NotoSans text-center">
-                    "Ambiente acolhedor e barbeiros extremamente qualificados.
-                    Cada detalhe é feito com muita atenção. Sou cliente fiel há
-                    mais de um ano e sempre saio satisfeito!"
-                  </p>
-                  <p class="text-sm text-white font-NotoSans">
-                    ⭐⭐⭐⭐⭐ | Qualidade e Profissionalismo
-                  </p>
+                    <img
+                      src="./assets/pfpReview2.png"
+                      alt="Foto de perfil de um usuário"
+                    />
+                    <h3
+                      class="text-base font-semibold text-secondary font-Raleway"
+                    >
+                      João Pedro
+                    </h3>
+                    <p class="text-sm text-white font-NotoSans text-center">
+                      "Ambiente acolhedor e barbeiros extremamente qualificados.
+                      Cada detalhe é feito com muita atenção. Sou cliente fiel
+                      há mais de um ano e sempre saio satisfeito!"
+                    </p>
+                    <p class="text-sm text-white font-NotoSans">
+                      ⭐⭐⭐⭐⭐ | Qualidade e Profissionalismo
+                    </p>
+                  </div>
                 </li>
 
                 <li
-                  class="splide__slide min-[755px]:max-w-[500px] min-[755px]:max-h-[323px] min-[344px]:max-w-[400px] flex flex-col items-center justify-center p-5 gap-5 bg-primary border-2 border-secondary rounded"
+                  class="splide__slide min-[755px]:max-w-[500px] min-[755px]:max-h-[323px] min-[570px]:max-w-[300px] min-[344px]:max-w-[250px]"
                 >
-                  <img
-                    src="./assets/pfpReview1.png"
-                    alt="Foto de perfil de um usuário"
-                  />
-                  <h3
-                    class="text-base font-semibold text-secondary font-Raleway"
+                  <div
+                    class="flex flex-col items-center justify-center p-5 gap-5 bg-primary border-2 border-secondary rounded"
                   >
-                    Luiz Fernando
-                  </h3>
-                  <p class="text-sm text-white font-NotoSans text-center">
-                    "Já frequentei várias barbearias, mas nenhuma se compara a
-                    esta. O atendimento é sempre impecável, e os barbeiros
-                    realmente entendem o que você quer. Saio sempre satisfeito e
-                    com um corte que me faz sentir renovado. Super recomendo!"
-                  </p>
-                  <p class="text-sm text-white font-NotoSans">
-                    ⭐⭐⭐⭐⭐ | Excelente Experiência!
-                  </p>
+                    <img
+                      src="./assets/pfpReview1.png"
+                      alt="Foto de perfil de um usuário"
+                    />
+                    <h3
+                      class="text-base font-semibold text-secondary font-Raleway"
+                    >
+                      Luiz Fernando
+                    </h3>
+                    <p class="text-sm text-white font-NotoSans text-center">
+                      "Já frequentei várias barbearias, mas nenhuma se compara a
+                      esta. O atendimento é sempre impecável, e os barbeiros
+                      realmente entendem o que você quer. Saio sempre satisfeito
+                      e com um corte que me faz sentir renovado. Super
+                      recomendo!"
+                    </p>
+                    <p class="text-sm text-white font-NotoSans">
+                      ⭐⭐⭐⭐⭐ | Excelente Experiência!
+                    </p>
+                  </div>
                 </li>
 
                 <li
-                  class="splide__slide min-[755px]:max-w-[500px] min-[755px]:max-h-[323px] min-[344px]:max-w-[400px] flex flex-col items-center justify-center p-5 gap-5 bg-primary border-2 border-secondary rounded"
+                  class="splide__slide min-[755px]:max-w-[500px] min-[755px]:max-h-[323px] min-[570px]:max-w-[300px] min-[344px]:max-w-[250px]"
                 >
-                  <img
-                    src="./assets/pfpReview2.png"
-                    alt="Foto de perfil de um usuário"
-                  />
-                  <h3
-                    class="text-base font-semibold text-secondary font-Raleway"
+                  <div
+                    class="flex flex-col items-center justify-center p-5 gap-5 bg-primary border-2 border-secondary rounded"
                   >
-                    João Pedro
-                  </h3>
-                  <p class="text-sm text-white font-NotoSans text-center">
-                    "Ambiente acolhedor e barbeiros extremamente qualificados.
-                    Cada detalhe é feito com muita atenção. Sou cliente fiel há
-                    mais de um ano e sempre saio satisfeito!"
-                  </p>
-                  <p class="text-sm text-white font-NotoSans">
-                    ⭐⭐⭐⭐⭐ | Qualidade e Profissionalismo
-                  </p>
+                    <img
+                      src="./assets/pfpReview2.png"
+                      alt="Foto de perfil de um usuário"
+                    />
+                    <h3
+                      class="text-base font-semibold text-secondary font-Raleway"
+                    >
+                      João Pedro
+                    </h3>
+                    <p class="text-sm text-white font-NotoSans text-center">
+                      "Ambiente acolhedor e barbeiros extremamente qualificados.
+                      Cada detalhe é feito com muita atenção. Sou cliente fiel
+                      há mais de um ano e sempre saio satisfeito!"
+                    </p>
+                    <p class="text-sm text-white font-NotoSans">
+                      ⭐⭐⭐⭐⭐ | Qualidade e Profissionalismo
+                    </p>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -1283,9 +1295,11 @@
     </main>
 
     <footer class="h-auto">
-      <div class="h-full bg-primary-light flex flex-col justify-center gap-10">
+      <div
+        class="h-full bg-primary-light flex flex-col justify-center gap-10 py-5"
+      >
         <div
-          class="flex flex-col min-[670px]:flex-row gap-5 pt-5 px-5 justify-around"
+          class="flex flex-col min-[670px]:flex-row gap-5 px-5 justify-around"
         >
           <div class="flex flex-row items-start min-[670px]:items-center gap-2">
             <a
